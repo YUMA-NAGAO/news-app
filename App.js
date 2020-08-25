@@ -1,7 +1,8 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, View, FlatList, SafeAreaView } from "react-native";
 import ListItem from "./components/ListItem";
+import articles from "./dummies/articles.json";
 
 const styles = StyleSheet.create({
   container: {
@@ -37,30 +38,29 @@ const styles = StyleSheet.create({
 });
 
 export default function App() {
+  const items = articles.map((articles, index) => {
+    return (
+      <ListItem
+        imageURL={articles.urlToImage}
+        title={articles.title}
+        author={articles.author}
+        key={index}
+      />
+    );
+  });
   return (
-    <View style={styles.container}>
-      <ListItem
-        title="    According to the Shitokan system, it corresponded to suke (the
-          deputy), and was called 'sunai-suke' (small Suke) because chojo was
-          also 'suke.hffhao;djfhoa;j'"
-        author="SampleNews"
-        imageURL="https://picsum.photos/id/10/200/200"
+    <SafeAreaView style={styles.container}>
+      <FlatList
+        data={articles}
+        renderItem={({ item }) => (
+          <ListItem
+            imageURL={item.urlToImage}
+            title={item.title}
+            author={item.author}
+          />
+        )}
+        keyExtractor={(item, index) => index.toString()}
       />
-      <ListItem
-        title="    According to the Shitokan system, it corresponded to suke (the
-          deputy), and was called 'sunai-suke' (small Suke) because chojo was
-          also 'suke.hffhao;djfhoa;j'"
-        author="Sws"
-        imageURL="https://picsum.photos/id/10/200/200"
-      />
-
-      <ListItem
-        title="    According to the Shitokan system, it corresponded to suke (the
-          deputy), and was called 'sunai-suke' (small Suke) because chojo was
-          also 'suke.hffhao;djfhoa;j'"
-        author="SampleNews"
-        imageURL="https://picsum.photos/id/10/200/200"
-      />
-    </View>
+    </SafeAreaView>
   );
 }
