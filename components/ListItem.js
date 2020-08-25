@@ -29,23 +29,18 @@ const styles = StyleSheet.create({
   },
 });
 
-const ListItem = () => {
+const ListItem = ({ title, imageURL, author }) => {
   return (
     <View style={styles.itemContainer}>
       <View style={styles.leftContainer}>
-        <Image
-          style={{ width: 100, height: 100 }}
-          source={{ uri: "https://picsum.photos/id/10/200/200" }}
-        />
+        <Image style={{ width: 100, height: 100 }} source={{ uri: imageURL }} />
       </View>
 
       <View style={styles.rightContainer}>
         <Text style={styles.text} numberOfLines={3}>
-          According to the Shitokan system, it corresponded to suke (the
-          deputy), and was called 'sunai-suke' (small Suke) because chojo was
-          also 'suke.'
+          {title}
         </Text>
-        <Text style={styles.subtext}>ReactNews</Text>
+        <Text style={styles.subtext}>{author}</Text>
       </View>
     </View>
   );

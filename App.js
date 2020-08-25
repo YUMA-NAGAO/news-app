@@ -39,7 +39,28 @@ const styles = StyleSheet.create({
 export default function App() {
   return (
     <View style={styles.container}>
-      <ListItem />
+      <ListItem
+        title="    According to the Shitokan system, it corresponded to suke (the
+          deputy), and was called 'sunai-suke' (small Suke) because chojo was
+          also 'suke.hffhao;djfhoa;j'"
+        author="SampleNews"
+        imageURL="https://picsum.photos/id/10/200/200"
+      />
+      <ListItem
+        title="    According to the Shitokan system, it corresponded to suke (the
+          deputy), and was called 'sunai-suke' (small Suke) because chojo was
+          also 'suke.hffhao;djfhoa;j'"
+        author="Sws"
+        imageURL="https://picsum.photos/id/10/200/200"
+      />
+
+      <ListItem
+        title="    According to the Shitokan system, it corresponded to suke (the
+          deputy), and was called 'sunai-suke' (small Suke) because chojo was
+          also 'suke.hffhao;djfhoa;j'"
+        author="SampleNews"
+        imageURL="https://picsum.photos/id/10/200/200"
+      />
     </View>
   );
 }
