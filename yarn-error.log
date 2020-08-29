@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\acfoa\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js login
+  C:\Program Files\nodejs\node.exe C:\Users\acfoa\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add expo-constantts
 
 PATH: 
-  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\acfoa\AppData\Local\Programs\AdoptOpenJDK\bin;C:\Users\acfoa\AppData\Local\Microsoft\WindowsApps;C:\Users\acfoa\AppData\Local\GitHubDesktop\bin;C:\Users\acfoa\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\acfoa\AppData\Roaming\npm
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\acfoa\AppData\Local\Programs\AdoptOpenJDK\bin;C:\Users\acfoa\AppData\Local\Microsoft\WindowsApps;C:\Users\acfoa\AppData\Local\GitHubDesktop\bin;C:\Users\acfoa\AppData\Roaming\npm;C:\Users\acfoa\AppData\Local\Programs\Microsoft VS Code\bin
 
 Yarn version: 
   1.22.4
@@ -14,17 +14,17 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: canceled
-      at Interface.<anonymous> (C:\Users\acfoa\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:137008:13)
-      at Interface.emit (events.js:315:20)
-      at Interface._ttyWrite (readline.js:868:16)
-      at ReadStream.onkeypress (readline.js:205:10)
-      at ReadStream.emit (events.js:315:20)
-      at emitKeys (internal/readline/utils.js:335:14)
-      at emitKeys.next (<anonymous>)
-      at ReadStream.onData (readline.js:1137:36)
-      at ReadStream.emit (events.js:315:20)
-      at addChunk (_stream_readable.js:295:12)
+  Error: https://registry.yarnpkg.com/expo-constantts: Not found
+      at Request.params.callback [as _callback] (C:\Users\acfoa\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66987:18)
+      at Request.self.callback (C:\Users\acfoa\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140748:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (C:\Users\acfoa\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141720:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (C:\Users\acfoa\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141642:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1220:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
 
 npm manifest: 
   {
