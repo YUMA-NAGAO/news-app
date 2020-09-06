@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, SafeAreaView, Text, TouchableOpacity } from "react-native";
 import { WebView } from "react-native-webview";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addClip, deleteClip } from "../store/actions/user";
 
 const styles = StyleSheet.create({
@@ -15,6 +15,12 @@ export default ArticleScreen = ({ route }) => {
   const { article } = route.params;
 
   const dispatch = useDispatch();
+
+  const user = useSelector((state) => state.user);
+  const { clips } = user;
+  const isClipped = () => {
+    return clips.some((clip) => clip.url === article.url);
+  };
   return (
     <SafeAreaView style={styles.container}>
       <TouchableOpacity
