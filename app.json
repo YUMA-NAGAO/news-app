@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "news-app",
-    "slug": "news-app",
+    "name": "news-app-test",
+    "slug": "news-app-test",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,7 +13,9 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -22,6 +24,7 @@
     },
     "extra": {
       "newsApiKey": "302e241a450e4a2885910f288d7f988b"
-    }
+    },
+    "description": ""
   }
 }
