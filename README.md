@@ -1,4 +1,4 @@
-ニュースアプリを作ろう！を使って作成したアプリです。
+[ニュースアプリを作ろう！](https://www.udemy.com/course/react-native-first-step/)を使って作成したアプリです。
 
 使用した API
 
